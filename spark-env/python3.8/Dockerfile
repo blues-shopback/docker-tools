@@ -31,7 +31,7 @@ WORKDIR /docker_setting
 RUN wget https://downloads.apache.org/spark/spark-${APACHE_SPARK_VERSION}/spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz && \
     wget https://downloads.apache.org/spark/spark-${APACHE_SPARK_VERSION}/spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz.asc && \
     wget https://downloads.apache.org/spark/KEYS && \
-    gpg --import KEYS && gpg --verify spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz.asc && \
+    gpg --import KEYS && gpg --verify spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz.asc
 
 RUN mkdir /temp && mv spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz /temp && cd /temp && \
     tar xzf spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz -C /usr/local --owner work --group root --no-same-owner && \
