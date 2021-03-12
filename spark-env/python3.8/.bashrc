@@ -93,3 +93,4 @@ fi
 
 export LANG=C.UTF-8
 export SPARK_HOME=/usr/local/spark
+export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.9-src.zip
