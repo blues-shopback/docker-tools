@@ -481,7 +481,7 @@ c.ServerApp.allow_root = True
 
 ## The full path to an SSL/TLS certificate file.
 #  Default: ''
-c.ServerApp.certfile = '/home/work/.jupyter/mycert.pem'
+c.ServerApp.certfile = '/root/.jupyter/mycert.pem'
 
 ## The full path to a certificate authority certificate for SSL/TLS client
 #  authentication.
@@ -630,7 +630,7 @@ c.ServerApp.ip = '*'
 
 ## The full path to a private key file for usage with SSL/TLS.
 #  Default: ''
-c.ServerApp.keyfile = '/home/work/.jupyter/mykey.key'
+c.ServerApp.keyfile = '/root/.jupyter/mykey.key'
 
 ## Hostnames to allow as local when allow_remote_access is False.
 #
