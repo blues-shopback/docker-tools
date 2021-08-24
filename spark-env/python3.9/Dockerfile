@@ -8,7 +8,6 @@ WORKDIR /docker_setting
 RUN pip install --upgrade pip && \
     pip install jupyterlab && \
     mkdir -p /root/.jupyter/ && \
-    cp -r /docker_setting/jupyter/* /home/work/.jupyter/ && \
     cp -r /docker_setting/jupyter/* /root/.jupyter/ && \
     cp .bashrc /root/
 
