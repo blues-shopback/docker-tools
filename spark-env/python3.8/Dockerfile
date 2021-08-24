@@ -47,7 +47,7 @@ RUN wget https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.2.0/hadoo
     mv spark-hadoop-cloud_2.12-3.1.1.3.1.7270.0-253.jar /usr/local/spark/jars/
 
 # Spark config
-COPY ./spark-defaults.conf /usr/local/spark/conf/
+COPY ./spark_conf/spark-defaults.conf /usr/local/spark/conf/
 ENV SPARK_HOME /usr/local/spark
 ENV PYTHONPATH $SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.9-src.zip
 
