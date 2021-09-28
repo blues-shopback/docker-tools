@@ -5,7 +5,7 @@ ENV APACHE_SPARK_VERSION 3.1.2
 ENV HADOOP_VERSION 3.2
 
 # Update os and install java
-RUN apt-get update && apt-get install -y \
+RUN apt update && apt install -y \
     iputils-ping telnet net-tools netcat \
     locales \
     ca-certificates \
